@@ -1,7 +1,11 @@
 /*
 gcc formatString.c -o formatString -g -m32
 
-Input that number and make the program call system("/bin/cat flag.txt");"
+Give me your name: %11$u
+Hello 459712
+
+Pick a number: 459712
+The flag is cs350{the_flag}
 */
 
 #include <stdio.h>
@@ -21,7 +25,7 @@ int main(void)
     fgets(name, 16, stdin);
 
     s1 = rand() % 1000000;
-    s1 = 3735928559;
+    //s1 = 3735928559;
 
     printf("Hello ");
     printf(name);
